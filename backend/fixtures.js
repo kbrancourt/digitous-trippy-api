@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const hotelModel = require("./models/hotels");
 const restaurantModel = require("./models/restaurants");
 
-mongoose.connect("mongodb://localhost:27017/trippy_api'", () => {
+mongoose.connect("mongodb://localhost:27017/trippy_api", { useNewUrlParser: true, useUnifiedTopology: true},() => {
   console.log("DB Connectée");
 });
 
